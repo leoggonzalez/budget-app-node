@@ -12,11 +12,6 @@ jobs:
         uses: actions/checkout@v2
 
       # Install your linters here
-
-      - name: Run linters
-        uses: wearerequired/lint-action@v1
-        with:
-          # Enable your linters here
       - name: Install yarn
         run: yarn install
       - name: Lint
