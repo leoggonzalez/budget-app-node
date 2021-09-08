@@ -1,6 +1,7 @@
-import { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import logo from "./logo.svg";
+import { Counter } from "./features/counter/Counter";
+import { Component } from "./Component";
 
 function App(): JSX.Element {
   return (
@@ -17,8 +18,9 @@ function App(): JSX.Element {
           rel="noopener noreferrer"
         >
           Learn React
-          <Component />
         </a>
+        <Counter />
+        <Component />
       </header>
     </div>
   );
