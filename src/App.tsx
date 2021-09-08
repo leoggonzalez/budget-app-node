@@ -1,4 +1,4 @@
-import React from "react";
+import { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -17,6 +17,7 @@ function App(): JSX.Element {
           rel="noopener noreferrer"
         >
           Learn React
+          <Component />
         </a>
       </header>
     </div>
