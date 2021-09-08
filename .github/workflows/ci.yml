@@ -1,0 +1,25 @@
+name: Lint
+
+on: [push]
+
+jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      # Install your linters here
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          # Enable your linters here
+      - name: Install yarn
+        run: yarn install
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn build
