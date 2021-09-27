@@ -1,0 +1,7 @@
+.app {
+  font-family: var(--font-monserrat);
+}
+
+.app h1, .app h2, .app h3, .app h4, .app h5 {
+  font-family: var(--font-open-sans);
+}

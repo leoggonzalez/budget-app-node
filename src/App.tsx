@@ -1,8 +1,9 @@
+import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
     </div>
   );
