@@ -1,0 +1,16 @@
+.container {
+  padding: 0 var(--spacing-sm);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
