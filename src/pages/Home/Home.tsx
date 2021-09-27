@@ -1,3 +1,9 @@
+import { Page } from "../../components/Page/Page";
+
 export function Home(): JSX.Element {
-  return <h1>Home</h1>;
+  return (
+    <Page>
+      <h1>Home</h1>
+    </Page>
+  );
 }
