@@ -1,6 +1,15 @@
+import { entries } from "../../data/entries";
 import "./ProjectionTable.css";
 
-export function ProjectionTable(): JSX.Element {
+interface Props {
+  accountId: string;
+}
+
+export function ProjectionTable({ accountId }: Props): JSX.Element {
+  const items = entries.filter((item) => item.accountId === accountId);
+
+  console.log(items);
+
   return (
     <table className="projection-table">
       <thead>
@@ -13,20 +22,17 @@ export function ProjectionTable(): JSX.Element {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th>Kotti Dang</th>
-          <th>12 €</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th>Random expense</th>
-          <th>14 €</th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
+        {items.map((item) => {
+          return (
+            <tr key={item.id}>
+              <th>{item.description}</th>
+              <th>{item.amount} €</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );

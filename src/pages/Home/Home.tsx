@@ -5,7 +5,7 @@ export function Home(): JSX.Element {
   return (
     <Page>
       <h1>Home</h1>
-      <ProjectionTable />
+      <ProjectionTable accountId="n26" />
     </Page>
   );
 }
