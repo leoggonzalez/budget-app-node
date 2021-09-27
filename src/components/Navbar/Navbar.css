@@ -4,3 +4,19 @@
   color: white;
   text-transform: uppercase;
 }
+
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.navbar__link:hover {
+  color: white;
+  color: var(--color-secondary)
+}
