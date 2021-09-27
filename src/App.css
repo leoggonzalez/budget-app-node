@@ -5,3 +5,7 @@
 .app h1, .app h2, .app h3, .app h4, .app h5 {
   font-family: var(--font-open-sans);
 }
+
+.app h1 {
+  font-size: 48px;
+}

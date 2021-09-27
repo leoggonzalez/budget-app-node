@@ -1,0 +1,10 @@
+.projection-table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.projection-table td, .projection-table th {
+  padding: var(--spacing-sm);
+  border: 1px solid black;
+}
