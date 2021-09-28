@@ -7,6 +7,7 @@ import {
   getEntriesPerMonth,
   getNextMonths,
 } from "../../helpers/date";
+import { Stack } from "../Stack/Stack";
 
 interface Props {
   accountId: string;
@@ -32,7 +33,7 @@ export function ProjectionTable({ accountId }: Props): JSX.Element {
   });
 
   return (
-    <div>
+    <Stack size="sm">
       <header>
         <label htmlFor="projection-months">Months to project</label>
         <select
@@ -79,6 +80,6 @@ export function ProjectionTable({ accountId }: Props): JSX.Element {
           </tr>
         </tbody>
       </table>
-    </div>
+    </Stack>
   );
 }

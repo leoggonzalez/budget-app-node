@@ -1,0 +1,23 @@
+.stack {
+  display: grid;
+}
+
+.stack--xs { 
+  gap: var(--spacing-xs) 
+}
+
+.stack--sm { 
+  gap: var(--spacing-sm) 
+}
+
+.stack--md { 
+  gap: var(--spacing-md) 
+}
+
+.stack--lg { 
+  gap: var(--spacing-lg) 
+}
+
+.stack--xl { 
+  gap: var(--spacing-xl) 
+}
