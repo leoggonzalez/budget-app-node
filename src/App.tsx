@@ -4,12 +4,14 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Accounts } from "./pages/Accounts/Accounts";
 import { Home } from "./pages/Home/Home";
 import { NoMatch } from "./pages/NoMatch/NoMatch";
+import { AddEntry } from "./shared/AddEntry/AddEntry";
 
 function App(): JSX.Element {
   return (
     <div className="app">
       <Router>
         <Navbar />
+        <AddEntry />
         <Switch>
           <Route path="/accounts">
             <Accounts />

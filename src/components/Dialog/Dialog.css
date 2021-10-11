@@ -1,0 +1,40 @@
+.dialog__background, .dialog__wrapper {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.dialog__wrapper {
+  position: fixed;
+  z-index: var(--z-index-modal);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.dialog__wrapper--open {
+  display: flex;
+}
+
+.dialog__background {
+  background-color: black;
+  position: absolute;
+  opacity: .3;
+}
+
+.dialog {
+  transform: translateY(-10%);
+  border: none;
+  padding: 0;
+}
+
+.dialog__header {
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog__content {
+  padding: 0 var(--spacing-md) var(--spacing-md);
+}

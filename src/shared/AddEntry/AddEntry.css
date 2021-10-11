@@ -1,0 +1,6 @@
+.add-entry {
+  position: fixed;
+  right: var(--spacing-sm);
+  bottom: var(--spacing-sm);
+  z-index: var(--z-index-actions);
+}

@@ -54,7 +54,9 @@ a {
 
 :root {
   /* COLOR */
+  --color-primary--light: #2D719F;
   --color-primary: #22577A;
+  --color-primary--dark: #1B445F;
   --color-secondary: #38A3A5;
   --color-accent: #57CC99;
   --color-success: #80ED99;
@@ -71,4 +73,8 @@ a {
   /* FONTS */
   --font-open-sans: 'Open Sans', sans-serif;
   --font-monserrat: 'Montserrat', sans-serif;
+
+  /* Z-INDEX */
+  --z-index-actions: 1;
+  --z-index-modal: 2;
 }
