@@ -1,19 +1,19 @@
 import { FormField } from "@nerdgeschoss/react-use-form-library";
 import { Stack } from "../../Stack/Stack";
 
-interface Props extends Partial<FormField<string>> {
+interface Props extends Partial<FormField<number>> {
   label?: string;
 }
 
-export function TextField({ label, value, onChange }: Props): JSX.Element {
+export function NumberField({ label, value, onChange }: Props): JSX.Element {
   function handleOnChange(event: React.ChangeEvent<HTMLInputElement>): void {
-    onChange?.(event.target.value);
+    onChange?.(Number(event.target.value));
   }
 
   return (
     <Stack size="xs">
       {label && <label>{label}: </label>}
-      <input type="text" value={value || ""} onChange={handleOnChange} />
+      <input value={value || ""} onChange={handleOnChange} type="number" />
     </Stack>
   );
 }

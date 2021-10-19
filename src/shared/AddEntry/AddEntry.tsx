@@ -2,6 +2,7 @@ import "./AddEntry.css";
 import { Button } from "../../components/Button/Button";
 import { Dialog } from "../../components/Dialog/Dialog";
 import { useState } from "react";
+import { CreateEntry } from "../../pages/Entries/Forms/CreateEntry";
 
 export function AddEntry(): JSX.Element {
   const [displayDialog, setDisplayDialog] = useState(false);
@@ -17,7 +18,7 @@ export function AddEntry(): JSX.Element {
           onClose={() => setDisplayDialog(false)}
           title="Add new entry"
         >
-          Do you want to create an entry?
+          <CreateEntry onClose={() => setDisplayDialog(false)} />
         </Dialog>
       </div>
     </>
