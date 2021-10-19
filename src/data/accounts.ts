@@ -7,6 +7,14 @@ export const getAccounts = async (): Promise<Account[]> => {
   return result.data as Account[];
 };
 
+export const getAccount = async (id: string): Promise<Account> => {
+  const result = await axios.get(`http://localhost:4000/accounts/${id}`);
+
+  console.log(result);
+
+  return result.data as Account;
+};
+
 export const createAccount = async ({
   data,
 }: {

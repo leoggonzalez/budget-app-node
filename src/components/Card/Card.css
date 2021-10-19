@@ -1,0 +1,6 @@
+.card {
+  padding: var(--spacing-md);
+  border: 1px solid #acacac;
+  display: inline-block;
+  border-radius: 4px;
+}

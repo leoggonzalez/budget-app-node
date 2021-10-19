@@ -13,3 +13,7 @@
 .app h2 {
   font-size: 36px;
 }
+
+strong {
+  font-weight: bold;
+}

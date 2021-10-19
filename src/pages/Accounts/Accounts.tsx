@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Card } from "../../components/Card/Card";
 import { Dialog } from "../../components/Dialog/Dialog";
 import { Page } from "../../components/Page/Page";
 import { getAccounts } from "../../data/accounts";
@@ -42,7 +44,13 @@ export function Accounts(): JSX.Element {
         ) : (
           <ul>
             {accounts.map((account) => {
-              return <li>Account: {account.name}</li>;
+              return (
+                <li>
+                  <Card title={account.name || `Account n°: ${account.id}`}>
+                    <Link to={`/accounts/${account.id}`}>See account</Link>
+                  </Card>
+                </li>
+              );
             })}
           </ul>
         )}
